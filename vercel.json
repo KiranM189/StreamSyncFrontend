@@ -2,7 +2,7 @@
   "installCommand": "npm install",
   "functions": {
     "api/*.ts": {
-      "runtime": "vercel-node@3.0.0"
+      "runtime": "nodejs20.x"
     }
   }
 }

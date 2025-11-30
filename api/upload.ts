@@ -6,15 +6,15 @@ export default async function handler(req: any, res: any) {
       method: req.method,
       headers: {
         ...req.headers,
-        host: undefined,
+        host: undefined
       },
-      body: req.body,
+      body: req.body
     });
 
-    const text = await response.text();
-    res.status(response.status).send(text);
+    const body = await response.text();
+    res.status(response.status).send(body);
   } catch (err) {
-    console.error("Proxy error:", err);
-    res.status(500).json({ error: "Could not reach backend" });
+    console.error(err);
+    res.status(500).json({ error: "Backend unreachable" });
   }
 }
