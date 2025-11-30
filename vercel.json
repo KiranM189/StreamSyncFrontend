@@ -1,12 +1,12 @@
 {
   "functions": {
-    "api-src/**/*.ts": {
+    "api/**/*.ts": {
     }
   },
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/api-src/$1"
+      "dest": "/api/$1"
     }
   ],
   "buildCommand": "npm run build",
