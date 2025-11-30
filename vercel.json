@@ -1,14 +1,7 @@
 {
   "functions": {
-    "api/**/*.ts": {
-    }
+    "api/*.ts": {}
   },
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
-    }
-  ],
   "buildCommand": "npm run build",
   "outputDirectory": "dist"
 }
