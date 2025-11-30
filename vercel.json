@@ -1,7 +1,7 @@
 { 
   "framework": "vite",
   "functions": {
-    "api/**/*.ts": {
+    "api-src/**/*.ts": {
       "runtime": "nodejs20.x"
     }
   },
