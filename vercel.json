@@ -1,7 +1,9 @@
 {
   "functions": {
     "api-src/**/*.ts": {
-      "runtime": "nodejs20.x"
+      "engines": {
+        "node": "20.x"
+      }
     }
   },
   "routes": [
