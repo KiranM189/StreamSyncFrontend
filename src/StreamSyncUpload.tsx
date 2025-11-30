@@ -164,10 +164,11 @@ export default function StreamSyncUpload() {
     formData.append("video", file);
 
     try {
-      const response = await fetch("http://172.236.110.221:5000/api/upload", {
+      const response = await fetch("/api/upload", {
         method: "POST",
-        body: formData
+        body: formData,
       });
+
 
       const data = await response.json();
       if (!response.ok) throw new Error(data.error);
