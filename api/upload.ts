@@ -11,10 +11,10 @@ export default async function handler(req: any, res: any) {
       body: req.body
     });
 
-    const body = await response.text();
-    res.status(response.status).send(body);
+    const text = await response.text();
+    res.status(response.status).send(text);
   } catch (err) {
-    console.error(err);
+    console.error("Proxy error:", err);
     res.status(500).json({ error: "Backend unreachable" });
   }
 }
