@@ -1,9 +1,6 @@
 {
   "functions": {
     "api-src/**/*.ts": {
-      "engines": {
-        "node": "20.x"
-      }
     }
   },
   "routes": [
